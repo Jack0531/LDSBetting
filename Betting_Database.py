@@ -5,10 +5,10 @@ app = Flask(__name__)
 
 # MySQL Configuration
 db = mysql.connector.connect(
-    host='localhost',
-    user='your_username',
-    password='your_password',
-    database='your_database_name')
+    host='127.0.0.1',
+    user='student',
+    password = 'student',
+    database='lds_betting')
     
 @app.route('/betting-lines', methods=['POST'])
 def create_betting_line():
